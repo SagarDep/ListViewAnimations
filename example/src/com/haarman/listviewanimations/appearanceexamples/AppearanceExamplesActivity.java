@@ -27,7 +27,7 @@ import android.widget.TextView;
 
 import com.haarman.listviewanimations.MyListActivity;
 import com.haarman.listviewanimations.R;
-import com.nhaarman.listviewanimations.ArrayAdapter;
+import com.nhaarman.listviewanimations.extras.itemmanipulation.ArrayAdapter;
 import com.nhaarman.listviewanimations.swinginadapters.AnimationAdapter;
 import com.nhaarman.listviewanimations.swinginadapters.prepared.AlphaInAnimationAdapter;
 import com.nhaarman.listviewanimations.swinginadapters.prepared.ScaleInAnimationAdapter;

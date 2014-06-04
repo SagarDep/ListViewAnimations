@@ -25,7 +25,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.nhaarman.listviewanimations.ArrayAdapter;
+import com.nhaarman.listviewanimations.extras.itemmanipulation.ArrayAdapter;
 
 public class MyListActivity extends BaseActivity {
 

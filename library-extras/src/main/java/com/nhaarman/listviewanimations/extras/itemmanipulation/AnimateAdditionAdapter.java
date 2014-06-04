@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nhaarman.listviewanimations.itemmanipulation;
+package com.nhaarman.listviewanimations.extras.itemmanipulation;
 
 import android.util.Pair;
 import android.view.View;
@@ -41,9 +41,9 @@ import java.util.List;
  * Usage:<br>
  * - Wrap a new instance of this class around a {@link android.widget.BaseAdapter}. <br>
  * - Set a {@code ListView} to this class using {@link #setListView(android.widget.ListView)}.<br>
- * - Call {@link com.nhaarman.listviewanimations.itemmanipulation.AnimateAdditionAdapter#insert(int, Object)} to animate the addition of an item.
+ * - Call {@link AnimateAdditionAdapter#insert(int, Object)} to animate the addition of an item.
  * <p>
- * Extend this class and override {@link com.nhaarman.listviewanimations.itemmanipulation.AnimateAdditionAdapter#getAdditionalAnimators(android.view.View,
+ * Extend this class and override {@link AnimateAdditionAdapter#getAdditionalAnimators(android.view.View,
  * android.view.ViewGroup)} to provide extra {@link com.nineoldandroids.animation.Animator}s.
  */
 @SuppressWarnings("unchecked")
@@ -62,9 +62,9 @@ public class AnimateAdditionAdapter<T> extends BaseAdapterDecorator {
     private long mScrolldownAnimationDurationMs = DEFAULT_SCROLLDOWN_ANIMATION_MS;
 
     /**
-     * Create a new {@link com.nhaarman.listviewanimations.itemmanipulation.AnimateAdditionAdapter} with given {@link android.widget.BaseAdapter}.
+     * Create a new {@link AnimateAdditionAdapter} with given {@link android.widget.BaseAdapter}.
      *
-     * @param baseAdapter should implement {@link com.nhaarman.listviewanimations.itemmanipulation.AnimateAdditionAdapter.Insertable},
+     * @param baseAdapter should implement {@link Insertable},
      *                    or be a {@link com.nhaarman.listviewanimations.BaseAdapterDecorator} whose BaseAdapter implements the interface.
      */
     public AnimateAdditionAdapter(final BaseAdapter baseAdapter) {
@@ -286,17 +286,4 @@ public class AnimateAdditionAdapter<T> extends BaseAdapterDecorator {
         return new Animator[]{};
     }
 
-    /**
-     * An interface for inserting items at a certain index.
-     */
-    public interface Insertable<T> {
-
-        /**
-         * Will be called to insert given {@code item} at given {@code index} in the list.
-         *
-         * @param index the index the new item should be inserted at
-         * @param item  the item to insert
-         */
-        public void add(int index, T item);
-    }
 }

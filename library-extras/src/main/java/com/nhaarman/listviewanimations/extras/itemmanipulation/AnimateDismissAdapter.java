@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.nhaarman.listviewanimations.itemmanipulation;
+package com.nhaarman.listviewanimations.extras.itemmanipulation;
 
 import android.view.View;
 import android.view.ViewGroup;

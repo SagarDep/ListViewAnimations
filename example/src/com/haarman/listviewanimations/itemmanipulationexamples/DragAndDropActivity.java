@@ -21,9 +21,9 @@ import android.widget.Toast;
 
 import com.haarman.listviewanimations.MyListActivity;
 import com.haarman.listviewanimations.R;
-import com.nhaarman.listviewanimations.ArrayAdapter;
-import com.nhaarman.listviewanimations.swinginadapters.prepared.AlphaInAnimationAdapter;
-import com.nhaarman.listviewanimations.widget.DynamicListView;
+import com.nhaarman.listviewanimations.extras.itemmanipulation.ArrayAdapter;
+import com.nhaarman.listviewanimations.extras.itemmanipulation.swinginadapters.prepared.AlphaInAnimationAdapter;
+import com.nhaarman.listviewanimations.extras.itemmanipulation.widget.DynamicListView;
 
 public class DragAndDropActivity extends MyListActivity {
 

@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.nhaarman.listviewanimations.itemmanipulation.swipedismiss.contextualundo;
+package com.nhaarman.listviewanimations.extras.itemmanipulation.swipedismiss.contextualundo;
 
 import android.graphics.Rect;
 import android.view.MotionEvent;
@@ -29,8 +29,8 @@ import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 
-import com.nhaarman.listviewanimations.itemmanipulation.swipedismiss.DismissableManager;
-import com.nhaarman.listviewanimations.itemmanipulation.swipedismiss.SwipeOnTouchListener;
+import com.nhaarman.listviewanimations.extras.itemmanipulation.swipedismiss.DismissableManager;
+import com.nhaarman.listviewanimations.extras.itemmanipulation.swipedismiss.SwipeOnTouchListener;
 import com.nhaarman.listviewanimations.util.AdapterViewUtil;
 import com.nineoldandroids.animation.Animator;
 import com.nineoldandroids.animation.AnimatorListenerAdapter;
@@ -94,7 +94,7 @@ public class ContextualUndoListViewTouchListener implements SwipeOnTouchListener
     }
 
     /**
-     * Set the {@link com.nhaarman.listviewanimations.itemmanipulation.swipedismiss.DismissableManager} to specify which views can or cannot be swiped.
+     * Set the {@link com.nhaarman.listviewanimations.extras.itemmanipulation.swipedismiss.DismissableManager} to specify which views can or cannot be swiped.
      * @param dismissableManager null for no restrictions.
      */
     @SuppressWarnings("UnusedDeclaration")

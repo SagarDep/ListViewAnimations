@@ -1,4 +1,4 @@
-package com.nhaarman.listviewanimations.itemmanipulation;
+package com.nhaarman.listviewanimations.extras.itemmanipulation;
 
 // TODO integrate in ExpandableListItemAdapter
 public interface ExpandCollapseListener {

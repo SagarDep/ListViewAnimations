@@ -30,9 +30,9 @@ import android.widget.ListView;
 import com.haarman.listviewanimations.BaseActivity;
 import com.haarman.listviewanimations.MyListActivity;
 import com.haarman.listviewanimations.R;
-import com.nhaarman.listviewanimations.ArrayAdapter;
-import com.nhaarman.listviewanimations.itemmanipulation.AnimateDismissAdapter;
-import com.nhaarman.listviewanimations.itemmanipulation.OnDismissCallback;
+import com.nhaarman.listviewanimations.extras.itemmanipulation.ArrayAdapter;
+import com.nhaarman.listviewanimations.extras.itemmanipulation.AnimateDismissAdapter;
+import com.nhaarman.listviewanimations.extras.itemmanipulation.OnDismissCallback;
 
 import java.util.ArrayList;
 import java.util.List;

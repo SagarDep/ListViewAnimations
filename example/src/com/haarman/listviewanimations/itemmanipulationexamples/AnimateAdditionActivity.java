@@ -27,8 +27,8 @@ import android.widget.Toast;
 
 import com.haarman.listviewanimations.MyListActivity;
 import com.haarman.listviewanimations.R;
-import com.nhaarman.listviewanimations.ArrayAdapter;
-import com.nhaarman.listviewanimations.itemmanipulation.AnimateAdditionAdapter;
+import com.nhaarman.listviewanimations.extras.itemmanipulation.ArrayAdapter;
+import com.nhaarman.listviewanimations.extras.itemmanipulation.AnimateAdditionAdapter;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.nhaarman.listviewanimations.itemmanipulation;
+package com.nhaarman.listviewanimations.extras.itemmanipulation;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,7 +9,6 @@ import android.widget.AbsListView;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
-import com.nhaarman.listviewanimations.ArrayAdapter;
 import com.nhaarman.listviewanimations.ListViewSetter;
 import com.nhaarman.listviewanimations.util.AdapterViewUtil;
 import com.nineoldandroids.animation.Animator;
@@ -121,7 +120,7 @@ public abstract class ExpandableListItemAdapter<T> extends ArrayAdapter<T> imple
     }
 
     /**
-     * Set the {@link com.nhaarman.listviewanimations.itemmanipulation.ExpandCollapseListener} that should be notified of expand / collapse events.
+     * Set the {@link ExpandCollapseListener} that should be notified of expand / collapse events.
      */
     public void setExpandCollapseListener(final ExpandCollapseListener expandCollapseListener) {
         mExpandCollapseListener = expandCollapseListener;

@@ -13,12 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.nhaarman.listviewanimations;
+package com.nhaarman.listviewanimations.extras.itemmanipulation;
 
 import android.widget.BaseAdapter;
 
-import com.nhaarman.listviewanimations.itemmanipulation.AnimateAdditionAdapter;
-import com.nhaarman.listviewanimations.widget.DynamicListView;
+import com.nhaarman.listviewanimations.extras.itemmanipulation.widget.DynamicListView;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -29,10 +28,10 @@ import java.util.ListIterator;
 
 /**
  * A {@code true} {@link ArrayList} adapter providing access to all ArrayList methods.
- * Also implements {@link DynamicListView.Swappable} for easy object swapping, and {@link AnimateAdditionAdapter.Insertable} for inserting objects.
+ * Also implements {@link DynamicListView.Swappable} for easy object swapping, and {@link Insertable} for inserting objects.
  */
 @SuppressWarnings("UnusedDeclaration")
-public abstract class ArrayAdapter<T> extends BaseAdapter implements List<T>, DynamicListView.Swappable, AnimateAdditionAdapter.Insertable<T> {
+public abstract class ArrayAdapter<T> extends BaseAdapter implements List<T>, DynamicListView.Swappable, Insertable<T> {
 
     protected List<T> mItems;
 

@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.nhaarman.listviewanimations.itemmanipulation.swipedismiss.contextualundo;
+package com.nhaarman.listviewanimations.extras.itemmanipulation.swipedismiss.contextualundo;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -27,6 +27,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.nhaarman.listviewanimations.BaseAdapterDecorator;
+import com.nhaarman.listviewanimations.extras.itemmanipulation.BaseAdapterDecoratorExtended;
 import com.nhaarman.listviewanimations.util.AdapterViewUtil;
 import com.nineoldandroids.animation.Animator;
 import com.nineoldandroids.animation.AnimatorListenerAdapter;
@@ -50,7 +51,7 @@ import static com.nineoldandroids.view.ViewPropertyAnimator.animate;
  * * Set your {@link ListView} to this ContextualUndoAdapter, and set this ContextualUndoAdapter to your ListView.<br>
  */
 @SuppressWarnings("UnusedDeclaration")
-public class ContextualUndoAdapter extends BaseAdapterDecorator implements ContextualUndoListViewTouchListener.Callback {
+public class ContextualUndoAdapter extends BaseAdapterDecoratorExtended implements ContextualUndoListViewTouchListener.Callback {
 
     private static final int ANIMATION_DURATION = 150;
     private static final String EXTRA_ACTIVE_REMOVED_ID = "removedId";

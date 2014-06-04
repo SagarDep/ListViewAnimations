@@ -1,4 +1,4 @@
-package com.nhaarman.listviewanimations.itemmanipulation;
+package com.nhaarman.listviewanimations.extras.itemmanipulation;
 
 import android.util.Pair;
 
@@ -13,23 +13,23 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * A class to insert items only when there are no active items.
- * A pending index-item pair can have two states: active and pending. When inserting new items, the {@link com.nhaarman.listviewanimations.itemmanipulation.AnimateAdditionAdapter.Insertable#add
+ * A pending index-item pair can have two states: active and pending. When inserting new items, the {@link Insertable#add
  * (int, Object)} method will be called directly if there are no active index-item pairs.
  * Otherwise, pairs will be queued until the active list is empty.
  */
 public class InsertQueue<T> {
 
-    private final AnimateAdditionAdapter.Insertable<T> mInsertable;
+    private final Insertable<T> mInsertable;
 
     private final Set<AtomicInteger> mActiveIndexes = new HashSet<AtomicInteger>();
     private final List<Pair<Integer, T>> mPendingItemsToInsert = new ArrayList<Pair<Integer, T>>();
 
-    public InsertQueue(final AnimateAdditionAdapter.Insertable<T> insertable) {
+    public InsertQueue(final Insertable<T> insertable) {
         mInsertable = insertable;
     }
 
     /**
-     * Insert an item into the queue at given index. Will directly call {@link com.nhaarman.listviewanimations.itemmanipulation.AnimateAdditionAdapter.Insertable#add(int,
+     * Insert an item into the queue at given index. Will directly call {@link Insertable#add(int,
      * Object)} if there are no active index-item pairs. Otherwise, the pair will be queued.
      * @param index the index at which the item should be inserted.
      * @param item the item to insert.

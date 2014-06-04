@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.nhaarman.listviewanimations.widget;
+package com.nhaarman.listviewanimations.extras.itemmanipulation.widget;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -37,7 +37,7 @@ import android.widget.HeaderViewListAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-import com.nhaarman.listviewanimations.itemmanipulation.swipedismiss.SwipeOnTouchListener;
+import com.nhaarman.listviewanimations.extras.itemmanipulation.swipedismiss.SwipeOnTouchListener;
 import com.nineoldandroids.animation.Animator;
 import com.nineoldandroids.animation.AnimatorListenerAdapter;
 import com.nineoldandroids.animation.ObjectAnimator;
@@ -79,7 +79,7 @@ public class DynamicListView extends ListView {
     }
 
     /**
-     * Implement this interface to be notified of ordering changes. Call {@link #setOnItemMovedListener(com.nhaarman.listviewanimations.widget.DynamicListView.OnItemMovedListener)}.
+     * Implement this interface to be notified of ordering changes. Call {@link #setOnItemMovedListener(com.nhaarman.listviewanimations.extras.itemmanipulation.widget.DynamicListView.OnItemMovedListener)}.
      */
     public interface OnItemMovedListener {
         /**
@@ -770,7 +770,7 @@ public class DynamicListView extends ListView {
     };
 
     /**
-     * Set the {@link com.nhaarman.listviewanimations.widget.DynamicListView.OnItemMovedListener} to be notified when an item is dropped.
+     * Set the {@link com.nhaarman.listviewanimations.extras.itemmanipulation.widget.DynamicListView.OnItemMovedListener} to be notified when an item is dropped.
      */
     public void setOnItemMovedListener(OnItemMovedListener onItemMovedListener) {
         this.mOnItemMovedListener = onItemMovedListener;

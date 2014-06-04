@@ -30,7 +30,7 @@ import android.widget.Toast;
 
 import com.haarman.listviewanimations.MyListActivity;
 import com.haarman.listviewanimations.R;
-import com.nhaarman.listviewanimations.itemmanipulation.ExpandableListItemAdapter;
+import com.nhaarman.listviewanimations.extras.itemmanipulation.ExpandableListItemAdapter;
 import com.nhaarman.listviewanimations.swinginadapters.prepared.AlphaInAnimationAdapter;
 
 import java.util.List;

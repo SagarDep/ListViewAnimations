@@ -1,4 +1,4 @@
-package com.nhaarman.listviewanimations.itemmanipulation.swipedismiss;
+package com.nhaarman.listviewanimations.extras.itemmanipulation.swipedismiss;
 
 /**
  * An interface to specify whether certain items can or cannot be dismissed.
