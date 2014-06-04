@@ -1,0 +1,27 @@
+apply plugin: 'android-library'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.0.3'
+
+    defaultConfig {
+        packageName 'com.nhaarman.listviewanimations.extras'
+        minSdkVersion 8
+        targetSdkVersion 19
+        versionCode 1
+        versionName project.VERSION_NAME
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':library')
+}
+
+apply from: 'https://raw.githubusercontent.com/sephiroth74/gradle-mvn-push/master/gradle-mvn-push.gradle'

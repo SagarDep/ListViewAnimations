@@ -1,13 +1,13 @@
 apply plugin: 'android'
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:19.0.+'
-    compile project(":library")
+    compile 'com.android.support:appcompat-v7:19.+'
+    compile project(":library-extras")
 }
 
 android {
     compileSdkVersion 19
-    buildToolsVersion '19.0.1'
+    buildToolsVersion '19.0.3'
 
     sourceSets {
         main {
@@ -28,14 +28,14 @@ android {
 
     signingConfigs {
         debug {
-            storeFile file(System.getProperty("user.home") + "/.android/debug.keystore")
+//            storeFile file(System.getProperty("user.home") + "/.android/debug.keystore")
         }
 
         release {
-            storeFile file(System.getProperty("user.home") + "/.android/nhaarman.keystore")
-            storePassword nhaarman_lva_storePassword
-            keyAlias nhaarman_lva_keyAlias
-            keyPassword nhaarman_lva_keyPassword
+//            storeFile file(System.getProperty("user.home") + "/.android/nhaarman.keystore")
+//            storePassword nhaarman_lva_storePassword
+//            keyAlias nhaarman_lva_keyAlias
+//            keyPassword nhaarman_lva_keyPassword
         }
     }
 
@@ -43,12 +43,12 @@ android {
 
         debug {
             debuggable true
-            signingConfig signingConfigs.debug
+//            signingConfig signingConfigs.debug
         }
 
         release {
             debuggable false
-            signingConfig signingConfigs.release
+//            signingConfig signingConfigs.release
         }
 
     }
